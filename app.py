@@ -9,9 +9,9 @@ def home():
 
 @app.route('/get_aqi', methods=['POST'])
 def get_aqi():
-    lat = request.form.get('latitude')
-    lon = request.form.get('longitude')
-    api_key = "your_api_key_here"
+    lat = request.form.get('28.7041° N')
+    lon = request.form.get('77.1025° E')
+    api_key = "a85a1156ee207ce9581799fe54250c0d"
     base_url = "https://api.weatherbit.io/v2.0/current/airquality"
     
     params = {
